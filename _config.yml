@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Khodok's Blog (Testing)
+logo: '/assets/images/RuthinkkTooBig.png'
 email:
 description: >- # this means to ignore newlines until "baseurl:"
     A random test for Khodok's Blog, this is just me trying
@@ -23,10 +24,12 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username: Khoding
 minimal_mistakes_skin: dark
 search: true
+breadcrumbs: true
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+repository: Khoding/testing-themes
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -56,6 +59,7 @@ plugins:
     - jekyll-feed
     - jemoji
     - jekyll-include-cache
+    - jekyll-archives
 
 author:
     name: 'Khodok'
@@ -99,6 +103,7 @@ defaults:
           comments: true
           share: true
           related: true
+          show_date: true
     # _pages
     - scope:
           path: '_pages'
@@ -113,3 +118,9 @@ category_archive:
 tag_archive:
     type: liquid
     path: /tags/
+
+comments:
+    provider: 'utterances'
+    utterances:
+        theme: 'github-dark'
+        issue_term: 'pathname'
