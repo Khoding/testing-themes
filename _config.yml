@@ -29,7 +29,7 @@ breadcrumbs: true
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
-repository: Khoding/testing-themes
+repository: Khoding/jekyll-blog
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
